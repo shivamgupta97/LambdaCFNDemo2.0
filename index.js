@@ -1,9 +1,8 @@
 var time = require('time');
 exports.handler = (event, context, callback) => {
     var currentTime = new time.Date();
-    currentTime.setTimezone("Indian/Cocos");
     callback(null, {
         statusCode: '200',
-        body: 'The time in Los Angeles is: ' + currentTime.toString(),
+        body: 'THIS EXAMPLE FOR LAMBDA SERVICE VIA API WORKS SUCCESSFULLY AND AS A DEMO TIME RETURNED IS: ' + currentTime.toString(),
     });
 };
